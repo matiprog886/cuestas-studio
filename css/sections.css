@@ -683,6 +683,8 @@ a.wa-chip:hover { background: rgba(37,211,102,0.2); border-color: rgba(37,211,10
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     overscroll-behavior-x: contain;
+    /* solo paneo horizontal: los gestos verticales pasan a la pagina */
+    touch-action: pan-x;
   }
   .tiers::-webkit-scrollbar { display: none; }
   .tiers .tier { flex: 0 0 84%; max-width: 320px; scroll-snap-align: center; }
